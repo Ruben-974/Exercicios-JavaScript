@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5° exercicio JavaScript</title>
+</head>
+<body>
+
+    <h1>Teste no DOM</h1>
+    <p>Texto para <strong>modificar</strong></p>
+    <p>Resultado:</p>
+
+    <script>
+        document.body.style.backgroundColor = 'white'
+        document.body.style.fontFamily = 'Arial'
+        document.body.style.fontSize = '30px'
+
+        var mod = document.getElementsByTagName('p')[0]
+
+        document.write(mod.innerHTML + ' Ola :D')
+
+        document.body.style.backgroundColor = '#262574'
+
+
+
+    </script>
+
+</body>
+</html>

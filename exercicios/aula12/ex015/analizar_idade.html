@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Analizar idade</title>
+</head>
+<body>
+
+    <header>
+        <h1>Analizar idade</h1>
+    </header>
+
+    <section>
+
+        <div id="perg">
+
+            <p>Ano do seu aniversario</p> <input type="number" name="ano" id="ano" value="2000">
+
+        </div>
+        
+        <div id="resp">
+
+            <p>Sexo:</p>
+            <input type="radio" name="sexo" id="mas" checked>
+            <label for="mas">Masculino</label>
+
+            <input type="radio" name="sexo" id="fem">
+            <label for="fem">Feminino</label>
+
+            <input type="button" value="Verificar" id="verificar" onclick="analizar_idade()">
+
+            <p id="msg_final">Preencha os dados a cima e veja o resultado!</p>
+
+        </div>
+
+    </section>
+
+    <footer>@Rúben Israel</footer>
+
+    <script src="script_analizar_idade.js"></script>
+
+</body>

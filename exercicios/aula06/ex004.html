@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+        }
+    </style>
+
+    <title>4° exercicio JavaScript</title>
+</head>
+<body>
+
+    <script>
+
+        /* 
+        Pergunta o nome para o usuario e retorna:
+        Mensagem amigavel 
+        Quantidade de letras
+        Nome em MAIUSCULO
+        Nome em minusculo
+        */
+
+        var nome = window.prompt('Qual o seu nome?')
+        document.write(`Prazer em conhece-lo <strong>${nome}</strong> <br>`)
+        document.write(`Seu nome contém <strong>${nome.length} letras</strong> <br>`)
+        document.write(`Seu nome escrito em maiusculo <strong>${nome.toUpperCase()}</strong> <br>`)
+        document.write(`Seu nome escrito em minusculo <strong>${nome.toLowerCase()}</strong>`)
+
+    </script>
+
+</body>
+</html>

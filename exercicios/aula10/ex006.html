@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        body {
+            user-select: none;
+            background-color: rgb(50, 50, 50);
+        }
+
+        div {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 50px;
+            font-weight: bold;
+            background-color: cyan;
+            width: 250px;
+            height: 250px;
+            line-height: 250px;
+            text-align: center;
+            margin: auto;
+            margin-top: 50px;
+            border-radius: 10%;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.900);
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.500);
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+    </style>
+
+    <title>6° exercicio JavaScript</title>
+</head>
+<body>
+    
+    <div id="quadrado_1">
+        Nada
+    </div>
+
+    <div id="quadrado_2">
+        Nada
+    </div>
+
+    <script>
+
+        var quadrado_1 = document.getElementById('quadrado_1')
+        var primeiro_clique = true
+        var fonte = 50
+
+        quadrado_1.addEventListener('', mexeu_quad_1)
+        quadrado_1.addEventListener('mouseout', saiu_quad_1)
+        quadrado_1.addEventListener('click', clique_quad_1)
+
+        function mexeu_quad_1() {
+
+            fonte = 50
+            quadrado_1.style.fontSize = '50px'
+            quadrado_1.style.backgroundColor = 'cyan'
+            quadrado_1.style.borderRadius = '10%'
+            quadrado_1.innerText = 'Mexeu'
+        }
+
+        function saiu_quad_1() {
+            fonte = 50
+            quadrado_1.style.fontSize = '50px'
+            quadrado_1.style.backgroundColor = 'cyan'
+            quadrado_1.style.borderRadius = '10%'
+            quadrado_1.innerText = 'Saiu'
+        }
+
+        function clique_quad_1() {
+
+            if (primeiro_clique === true) {
+                quadrado_1.style.backgroundColor = '#ff0000'
+                quadrado_1.style.borderRadius = '50%'
+                quadrado_1.style.fontSize = `${fonte -= 1}px`
+                primeiro_clique = false
+            } else {
+                quadrado_1.style.backgroundColor = '#ff0000'
+                quadrado_1.style.borderRadius = '50%'
+                quadrado_1.style.fontSize = `${fonte -= 1}px`
+                primeiro_clique = true
+            }
+
+            if (fonte <= 50) {
+                quadrado_1.innerText = 'Clicou'
+                }
+
+            if (fonte <= 35) {
+                quadrado_1.innerText = 'Paraa'
+            }
+
+            if (fonte <= 15) {
+                quadrado_1.innerText = 'Pfvv'
+            }
+            if (fonte === 0) {
+                document.body.style.backgroundColor = 'white'
+                quadrado_1.parentNode.removeChild(quadrado_1)
+                quadrado_2.parentNode.removeChild(quadrado_2)
+                document.body.style.background = 'black'
+            }
+        }
+
+        var quadrado_2 = document.getElementById('quadrado_2')
+
+        quadrado_2.addEventListener('mouseenter', entrou_quad_2)
+        quadrado_2.addEventListener('mouseout', saiu_quad_2)
+        quadrado_2.addEventListener('mousedown', segurou_quad_2)
+        quadrado_2.addEventListener('mouseup', soltou_quad_2)
+
+        function entrou_quad_2() {
+            quadrado_2.style.backgroundColor = 'cyan'
+            quadrado_2.style.borderRadius = '10%'
+            quadrado_2.innerText = 'Entrou'
+        }
+
+        function saiu_quad_2() {
+            quadrado_2.style.backgroundColor = 'cyan'
+            quadrado_2.style.borderRadius = '10%'
+            quadrado_2.innerText = 'Saiu'
+        }
+
+        function segurou_quad_2() {
+            quadrado_2.style.backgroundColor = 'red'
+            quadrado_2.style.borderRadius = '50%'
+            quadrado_2.innerText = 'Segurou'           
+        }
+
+        function soltou_quad_2() {
+            quadrado_2.style.backgroundColor = 'cyan'
+            quadrado_2.style.borderRadius = '50%'
+            quadrado_2.innerText = 'Soltou'
+        }
+
+    </script>
+
+</body>
+</html>

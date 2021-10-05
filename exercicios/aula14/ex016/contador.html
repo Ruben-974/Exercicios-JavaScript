@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Contagem</title>
+
+</head>
+<body>
+
+    <header>
+
+        <h1>Contagem</h1>
+
+    </header>
+    
+    <section>
+
+        <div id="pre_informacoes">
+
+            <div class="numeros">
+
+                <p>Inicio:</p><input type="number" name="inicio" id="inicio" value="0" onkeyup="digitando()">
+
+            </div>
+
+            <div class="numeros">
+
+                <p>Fim:</p><input type="number" name="fim" id="fim" value="0">
+
+            </div>
+
+            <div class="numeros">
+
+                <p>Passo:</p><input type="number" name="passo" id="passo" value="0">
+
+            </div>
+
+            <input type="button" value="Contar" onclick="contador()" id="botao">
+
+        </div>
+            
+        <div id="resp_informacoes">
+
+            <p id="res">Preparando contagem...</p>
+            <p id="contar">...</p>
+
+        </div>
+
+    </section>
+
+    <footer>@Rúben Israel</footer>
+
+    <script src="script_contador.js"></script>
+    
+</body>
+</html>

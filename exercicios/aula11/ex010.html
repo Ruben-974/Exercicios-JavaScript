@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10° exercicio JavaScript</title>
+
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div#multas, div#naci {
+            margin-bottom: 100px;
+            height: 100px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div id="multas">
+        <h1>Sistema de multas</h1>
+        <input type="number" name="txt_vel" id="txt_vel">
+        <input type="button" value="Calcular" id="botao_multas">
+        <div id="res_multas">
+        </div>
+    </div>
+
+    <div id="Nacionalidade">
+        <h1>Nacionalidade</h1>
+        <input type="text" name="txt_nacionalidade" id="txt_nacionalidade">
+        <input type="button" value="Analizar" id="botao_nacionalidade" onclick="analizar()">
+        <div id="res_nacionalidade">
+        </div>
+    </div>
+
+    <script>
+
+        botao_multas = document.getElementById('botao_multas')
+        botao_multas.addEventListener('click', calcular)
+
+        function calcular() {
+
+            txt_vel = document.getElementsByName('txt_vel')[0]
+            res = document.getElementById('res_multas')
+            
+
+            vel = Number(txt_vel.value)
+
+            res.innerHTML = ''
+
+            if (vel > 60) {
+                res.innerHTML = '<p>Você esta MULTADO por alta velocidade</p>'
+            }
+
+            res.innerHTML += '<p>Dirija sempre com segurança</p>'
+        }
+
+        function analizar() {
+
+           naci = document.getElementById('txt_nacionalidade').value.toLowerCase()
+
+           res = document.getElementById('res_nacionalidade')
+
+           if (naci == 'brasil') {
+               res.innerHTML = '<p>Você e Brasileiro</p>'
+           } else {
+               res.innerHTML = '<p>Você e Estrangeiro</p>'
+           }
+
+        }
+    </script>
+
+</body>
+</html>
