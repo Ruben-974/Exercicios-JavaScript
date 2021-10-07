@@ -38,11 +38,19 @@ Agredecimentos [@gustavoguanabara](https://github.com/gustavoguanabara) [@cursoe
 ---
 ## [Módulo E](https://www.youtube.com/watch?v=3emz6rpcJyA&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1&index=22)
 ---
+* [Exercícios aula 13](https://github.com/Ruben-974/Exercicios-JavaScript/tree/main/M%C3%B3dulo%20E/Aula%2013%20-%20Repeti%C3%A7%C3%B5es%20-%20Parte%201) - Repetições - Parte 1
+   * Contando (do while)
+---
 * [Exercícios aula 14](https://github.com/Ruben-974/Exercicios-JavaScript/tree/main/M%C3%B3dulo%20E/Aula%2014%20-%20Repeti%C3%A7%C3%B5es%20-%20Parte%202) - Repetições - Parte 2
    * Ex16 - Contador
    * Ex17 - Gerador de tabuada
+   * Contando (for)
 ---
 ## [Módulo F](https://www.youtube.com/watch?v=5m4UhZd-Les&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1&index=28)
+---
+* [Exercícios aula 15](https://github.com/Ruben-974/Exercicios-JavaScript/tree/main/M%C3%B3dulo%20F/Aula%2015%20-%20Vari%C3%A1veis%20compostas) - Variáveis compostas
+   * Analisando vetor
+   * Vetor na tela
 ---
 * [Exercícios aula 16](https://github.com/Ruben-974/Exercicios-JavaScript/tree/main/M%C3%B3dulo%20F/Aula%2016%20-%20Fun%C3%A7%C3%B5es) - Funções
    * Ex18 - Analisar números
